@@ -1,0 +1,60 @@
+$myFont: "Raleway",Arial, san-serif;
+$myFontSize: 16px;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $myFont;
+}
+
+header {
+    max-width: 1500px;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    padding: 16px;
+    margin: auto;
+    font-size: 24px;
+
+    .left {
+        float: left;
+        padding: 8px 16px;
+        color: #000 !important;
+        background-color: #fff !important;
+        text-decoration: none;
+    }
+
+    .right {
+        float: right;
+        padding: 8px 16px;
+        color: #000 !important;
+        background-color: #fff !important;
+        text-decoration: none;
+    }
+}
+
+.content {
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+
+    .half {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header::before {
+    content: "";
+    display: table;
+    clear: both;
+}
